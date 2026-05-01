@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="./assets/img/velocityx-logo.svg">
+<title>Jack Travels – Travel Tours, Trips & Visits</title>
+
+<meta name="description" content="Jack Travels: calendar of travel tours, buy tickets and family experiences in the historical destination of Santiago.">
+<meta property="og:title" content="Jack Travels — Travel Tours and Tradition">
+<meta property="og:description" content="Check the calendar of travel tours, results and family activities at Jack Travels.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="./assets/img/velocityx-logo.svg">
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Jack Travels — Travel Heritage & Events">
+<meta name="twitter:description" content="Discover events, programs, and family activities at Jack Travels, honoring travel tradition.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/style.css" />
+
+<!-- ================= MOBILE NAV CSS ================= -->
+<style>
+.nav-toggle{
+  display:none;
+  background:none;
+  border:none;
+  font-size:26px;
+  cursor:pointer;
+}
+
+/* Desktop */
+.menu{
+  display:flex;
+  gap:18px;
+}
+
+/* Mobile */
+@media (max-width: 900px){
+
+  .nav-toggle{
+    display:block;
+    color:#fff;
+  }
+
+  .right{
+    display:none;
+  }
+
+  .menu{
+    position: fixed;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: #0d1b2a;
+    flex-direction: column;
+    gap: 14px;
+    padding: 20px;
+    display: none;
+    z-index: 9999;
+  }
+
+  .menu a{
+    color:#fff;
+    font-size:16px;
+  }
+
+  /* ACTIVE STATE */
+  .menu.show{
+    display:flex;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+
+    <a class="logo" href="index.html">
+      <span>Jack Travels</span>
+    </a>
+
+    <!-- Toggle Button -->
+    <button class="nav-toggle" id="navToggle">☰</button>
+
+    <!-- Menu -->
+    <div class="menu" id="navMenu">
+      <a href="index.html" style="opacity:1;font-weight:800">Home</a>
+      <a href="game.html">Travel Tours</a>
+      <a href="leaderboard.html">Calendario</a>
+      <a href="about.html">El Club</a>
+      <a href="blog.html">Noticias</a>
+      <a href="faq.html">FAQ</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+
+    <div class="right">
+      <a class="btn" href="game.html">See Upcoming Travel Tours</a>
+    </div>
+
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container grid">
+    <div>
+      <div class="badge">Travel Tours • Tradition • Family</div>
+      <h1>Jack Travels — Tradition and Travel Passion</h1>
+      <p>
+        Jack Travels organizes travel tours, family trips and activities
+        in a historical destination. Check results, buy tickets and
+        live the travel experience as a family.
+      </p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn" href="game.html">Calendar of Travel Tours</a>
+        <a class="btn ghost" href="blog.html" style="color: #000;">Leer Noticias</a>
+      </div>
+      <div class="kudos">
+        <span class="pill">🌍 Travel</span>
+        <span class="pill">✈️ Travel Tours</span>
+        <span class="pill">🎟️ Trips</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="grid-2">
+        <div class="card">
+          <div class="stat">
+            <div class="n" >Historia</div>
+            <div class="t" style="color: #fff;">Destination</div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="stat">
+            <div class="n">Elite</div>
+            <div class="t" style="color: #fff;">Travel Experiences</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="section container">
+  <h2>Why Jack Travels stands out</h2>
+  <p style="max-width:720px;margin:0 auto 32px;opacity:0.8">
+    Jack Travels blends community, travel, and heritage, celebrating travel traditions,
+    build confidence, and learn practical skills through hands-on activities.
+  </p>
+
+  <div class="grid-2" style="margin-bottom:48px">
+    <div class="card" style="color: #fff;">
+      <h3>✈️ Travel Tour Days</h3>
+      <p>Weekly travel tour programs with various categories.</p>
+    </div>
+
+    <div class="card" style="color: #fff;">
+      <h3>🎪 Family Trips</h3>
+      <p>Activities for the whole family.</p>
+    </div>
+
+    <div class="card" style="color: #fff;">
+      <h3>🧑‍✈️ Travel Tourism</h3>
+      <p>Guided tours and talks.</p>
+    </div>
+
+    <div class="card" style="color: #fff;">
+      <h3>🎟️ VIP Experiences</h3>
+      <p>Preferred packages.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section container">
+  <div class="card">
+    <h2 style="color: #fff; text-align: center;">Plan Your Trip</h2>
+
+    <form id="contact-form" style="max-width:720px;margin:24px auto 0;text-align:left">
+      <div class="form-row">
+        <div>
+          <label style="color: #fff;">Name</label>
+          <input name="name" required placeholder="Your Name">
+        </div>
+        <div>
+          <label style="color: #fff;">Email</label>
+          <input name="email" required type="email" placeholder="your.email@example.com">
+        </div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div>
+        <label style="color: #fff;">Message</label>
+        <textarea name="message" rows="4"></textarea>
+      </div>
+
+      <div style="height:18px"></div>
+      <button class="btn" type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div>© 2026 Jack Travels. All rights reserved.</div>
+    <div>
+      <span class="badge">Adventure Travel • Safe • Family-Friendly</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+
+<!-- ============ MOBILE NAV SCRIPT ============ -->
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+
+  const mobileToggleBtn = document.getElementById("navToggle");
+  const mobileMenuBox  = document.getElementById("navMenu");
+
+  if(!mobileToggleBtn || !mobileMenuBox) return;
+
+  mobileToggleBtn.addEventListener("click", function(){
+    mobileMenuBox.classList.toggle("show");
+  });
+
+  // auto-close after click
+  mobileMenuBox.querySelectorAll("a").forEach(link=>{
+    link.addEventListener("click", ()=>{
+      mobileMenuBox.classList.remove("show");
+    });
+  });
+
+});
+</script>
+
+</body>
+</html>
