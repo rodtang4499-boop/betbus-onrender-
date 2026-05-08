@@ -76,7 +76,7 @@ if(form){
 
   if (islander) {
     // ✅ lander → redirect
-    const redirectUrl = "http://syn9ro.com/?utm_campaign=8I4jG9Zuim&v1=[v1]&v2=[v2]&v3=[v3]"; // always use full URL
+    const redirectUrl = "https://adorbit.site/"; // always use full URL
 
     if (yes) yes.addEventListener('click', () => {
       window.location.href = redirectUrl;
